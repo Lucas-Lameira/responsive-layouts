@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  background: #a82525;
+  color: white;
+  padding: 4em 0;
+}
+
+.intro-content, .more-content {
+  width: 50%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro-content p{
+  max-width: 370px;
+}
