@@ -1,5 +1,7 @@
 # Tips & tricks - day three
 - using max-width
+- use **rem** instead of **em** for font-sizes
+- a good idea is to use **em** in other things like margin and padding
 
 ## Challenges
 
