@@ -28,7 +28,7 @@ body{
 
 .intro-content h1{
    color: var(--white);
-   font-size: 3.5vw;
+   font-size: 3rem;
    font-weight: 900;
    line-height: 1.2;
 }
@@ -44,29 +44,27 @@ body{
 .intro-content a{
    text-decoration: none;
    background-color: var(--btn);
-
+   color: var(--btn-text);
+   font-size: 1.2rem;
    font-weight: bold;
-   font-size: 1.5vw;
 
    /*relative to the font-size of the 'a' element  */
-   border-radius: 5em; 
-   padding: 1em 1em;
+   border-radius: 5em;
+   padding: .75em 3em;
    
-   color: var(--btn-text);
-
-   display: block;
-   text-align: center;
-   width: 25vw;
 }
 
-@media screen and (max-width: 380px) {
-   .intro-content h1{
-      font-size: 2rem;
+@media screen and (max-width: 520px) {
+   html{
+      font-size: 12px;
+   }
+   .intro-content{
+      width: 80%;
    }
  }
 
  @media screen and (min-width: 1700px) {
-   .intro-content h1{
-      font-size: 3.8rem;
+   html{
+      font-size: 18px;
    }
  }
