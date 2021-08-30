@@ -8,8 +8,13 @@ body {
     font-size: 1.3rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1 {
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .container {
@@ -19,32 +24,9 @@ h1 {
 }
 
 .row {
-    /* display: flex => flex container */
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
-
-.col {
-    /* these are now flex items */
-    text-align: center;
-    width: 100%;
-}
-
-.body-content {
-    padding: 60px 0;
-}
-
-.body-content h2{
-    color: #87629A;
-}
-
-/* could use some diferent class or id, this is just a trainning part for me to understand the + selector */
-.body-content + .body-content, 
-.body-content + .body-content h2{
-    background-color: #136C72;
-    color: #FFF;
-}
-
 
 .hero {
     padding: 100px 0;
@@ -52,8 +34,13 @@ h1 {
     color: #FFF;
 }
 
-.hero__text {
-    width: 60%;
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
 }
 
 .hero p {
@@ -74,4 +61,31 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.main-text, .aside-text{
+    margin: 2rem 0;
+}
+
+.main-text {
+    width: 56%;
+}
+
+.main-text h2{
+    color: #136C72;
+}
+
+.main-text p{
+    color: #000;
+}
+
+.aside-text{
+    width: 40%;
+    text-align: center;
+    background-color: #136C72;
+    color: #fff;
+}
+
+.aside-text div{
+    padding: 1.5rem 4rem;
 }
