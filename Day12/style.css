@@ -1,0 +1,112 @@
+*, *::before, *::after{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+   --light: #F3EED9;
+   --brown: #824936;
+   --dark: #222C2A;
+   --white: #fff;
+}
+
+/* TYPOGRAPHY */
+h1, h2{
+   font-family: 'Playfair Display', serif;
+   font-weight: 900;
+}
+
+h3, p{
+   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+   font-size: 64px;
+}
+
+h2{
+   font-size: 36px;
+}
+
+h3{
+   font-size: 21px;
+   font-weight: 300;
+}
+
+p{
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.8;
+}
+
+
+/*  */
+.container{
+   width: 80%;
+   max-width: 1128px;
+   margin: 0 auto;
+}
+
+.row{
+   display: flex;
+}
+
+
+/* hero section */
+.hero{
+   background-color: var(--light);
+   height: 100vh;
+   min-height: 660px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hero__title--primary{
+   color: var(--brown);
+}
+
+/* quality section */
+.quality{
+   margin: 4rem 0 10em 0;
+}
+
+.quality h2{
+   text-align: center;
+   color: var(--brown);
+   margin: 1em 0 1.3em 0;
+}
+
+.quality__paragraphs{
+   gap: 3.2em;
+}
+
+
+/* photos */
+.photos{
+   background-color: var(--dark);
+   color: var(--white);
+   padding: 7em 0;
+}
+
+.photos + .photos{
+   background-color: var(--brown);
+}
+
+.images{
+   gap: 2rem;
+}
+
+.images__text h2{
+   margin-bottom: .5em;
+}
+
+.image--reverse {
+  flex-direction: row-reverse;
+}
+
+.photos im{
+   align-self: flex-start;
+}
